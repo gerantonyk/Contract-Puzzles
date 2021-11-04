@@ -10,6 +10,7 @@ contract Game3 {
   }
 
   function win(address addr1, address addr2, address addr3) external {
+
     require(balances[addr3] > 0);
     require(balances[addr2] > balances[addr1]);
     require(balances[addr1] > balances[addr3]);
